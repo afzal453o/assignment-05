@@ -6,6 +6,15 @@ document.getElementById('show-add-money-form')
     showSectionById('add-money-form');
 })
 
+document.getElementById('show-add-money-form')
+.addEventListener('click',function(){
+    showSectionById('add-money-feni');
+})
+
+document.getElementById('show-add-money-form')
+.addEventListener('click',function(){
+    showSectionById('add-money-quota');
+})
 
 document.getElementById('show-transaction-history')
 .addEventListener('click',function(){

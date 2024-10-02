@@ -68,7 +68,7 @@
         </div>
         <div class="navbar-end">
             <img src="assets/coin.png" alt="">
-            <div id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+            <div id="account-balance" class="stat-value text-2xl bg-white">5500</div>
 
         </div>
       </div>
@@ -93,7 +93,7 @@
               <div>
                 <div class="flex mb-2" >
                     <img src="assets/coin.png" alt="">
-                    <div  id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+                    <div  id="noakhali-balance" class="stat-value text-2xl bg-white">5500</div>
                 </div>
                 <h1 class="text-xl font-bold">Donate for Flood at Naokhali, Bangladesh</h1>
                 <p class="py-3">
@@ -101,11 +101,11 @@
                     Your contribution can provide food, clean water, and shelter to those affected.
                     Every donation counts and can make a real impact on the ground."
                 </p>
-                <input type="text" id="input-add-money" placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
+                <input type="text" id="input-add-noakhali" placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
                   <button  onclick="my_modal_1.showModal()"
-                   class="btn btn-block mt-3 " id="btn-add-money">Donate Now</button>
+                   class="btn btn-block mt-3 " id="btn-add-noakhali">Donate Now</button>
                   <!-- modal-section-start -->
-                  <dialog id="my_modal_1" class="modal ">
+                  <dialog id="my_modal_1" class="modal">
                     <div class="modal-box flex  flex-col justify-center px-5 py-10 items-center ">
                       <h3 class="text-5xl font-bold ">Congrates !</h3> <br>
                       <img src="assets/coin.png"  alt="">
@@ -125,7 +125,7 @@
           <!-- section-1 End -->
 
          <!-- section-2 -->
-         <div id="add-money-form" class="hero bg-base-100 ">
+         <div id="add-money-feni" class="hero bg-base-100 ">
             <div class="hero-content flex-col lg:flex-row">
               <img
                 src="assets/feni.png"
@@ -133,7 +133,7 @@
               <div>
                 <div class="flex mb-2">
                     <img src="assets/coin.png" alt="">
-                    <div id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+                    <div id="feni-balance" class="stat-value text-2xl bg-white">5500</div>
                 </div>
                 <h1 class="text-xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
                 <p class="py-3">
@@ -143,15 +143,31 @@
                     Every contribution, big or small, makes a difference.
                     Donate now and help the people of Feni rebuild their lives."
                 </p>
-                <input type="text" id="input-add-money"   placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
-                  <button class="btn btn-block mt-3" id="btn-add-money">Donate Now</button>
+                <input type="text" id="input-add-feni"   placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
+                  <button  onclick="my_modal_2.showModal()"
+                  class="btn btn-block mt-3" id="btn-add-feni">Donate Now</button>
+                   <!-- modal-section-start -->
+                   <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box flex  flex-col justify-center px-5 py-10 items-center ">
+                      <h3 class="text-5xl font-bold ">Congrates !</h3> <br>
+                      <img src="assets/coin.png"  alt="">
+                      <p class="py-4 ">You have Donated for Humankind</p>
+                      <h3 class=" text-gray-500 font-bold text-4xl">Successfully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn ">Close Confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              <!-- modal-section-end -->
               </div>
             </div>
           </div>
           <!-- section-2 end -->
 
           <!-- section-3 start -->
-          <div id="add-money-form"  class="hero bg-base-100 ">
+          <div id="add-money-quota"  class="hero bg-base-100 ">
             <div class="hero-content flex-col lg:flex-row">
               <img
                 src="assets/quota-protest.png"
@@ -159,7 +175,7 @@
               <div>
                 <div class="flex mb-2">
                     <img src="assets/coin.png" alt="">
-                    <div  id="account-balance"  class="stat-value text-2xl bg-white">5500BDT</div>
+                    <div  id="quota-balance"  class="stat-value text-2xl bg-white">5500</div>
                 </div>
                 <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
                 <p class="py-3">
@@ -169,16 +185,31 @@
                     Every donation helps in healing and rebuilding their lives.
                     Join us in offering hope and support to the injured heroes of the Quota Movement."
                 </p>
-                <input type="text" id="input-add-money"   placeholder="Write Donate Amount" autocomplete="off" class="input input-bordered w-full " />
-                  <button class="btn btn-block mt-3" id=
-                  "btn-add-money">Donate Now</button>
+                <input type="text" id="input-add-quota"   placeholder="Write Donate Amount" autocomplete="off" class="input input-bordered w-full " />
+                  <button   onclick="my_modal_3.showModal()"
+                  class="btn btn-block mt-3" id="btn-add-quota">Donate Now</button>
+                   <!-- modal-section-start -->
+                   <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box flex  flex-col justify-center px-5 py-10 items-center ">
+                      <h3 class="text-5xl font-bold ">Congrates !</h3> <br>
+                      <img src="assets/coin.png"  alt="">
+                      <p class="py-4 ">You have Donated for Humankind</p>
+                      <h3 class=" text-gray-500 font-bold text-4xl">Successfully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn ">Close Confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              <!-- modal-section-end -->
               </div>
             </div>
           </div>
           <!-- section-3 end -->
 
           <!-- transaction start -->
-          <div id="transaction-section" class="hidden">
+          <div id="transaction-section" class="hidden" >
             <h2 class="text-3xl text-center">Transaction History</h2>
             <div id="transaction-container" class="space-y-3"></div>
            </div>
