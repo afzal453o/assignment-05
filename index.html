@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Font-Awesome-Icon -->
+  <script src="https://kit.fontawesome.com/650b679ad2.js" crossorigin="anonymous"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Daisy Ui CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font-style -->
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .col-arrow {
+      color: white;
+    }
+  </style>
+  <!-- tailwind css -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            string: ' rgb(119, 170, 234)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- nav section -->
+   <header>
+    <div class="navbar bg">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+
+          </div>
+          <a class="btn btn-ghost text-xl ">Blog</a>
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+          <ul class="menu menu-horizontal px-1 text-xl ">
+            <img src="assets/logo.png" alt="">
+            <li><a>Donate Bangladesh</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <img src="assets/coin.png" alt="">
+            <div id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+
+        </div>
+      </div>
+   </header>
+
+   <!-- main section start -->
+    <main>
+        <!-- button-start -->
+
+         <div class="flex justify-center py-6 gap-3 ">
+                <button id="show-add-money-form" class="btn btn-lg">Donation</button>
+                <button id="show-transaction-history" class="btn btn-lg btn-outline">History</button>
+         </div>
+           <!-- button-end-->
+
+        <!-- section-1 start -->
+        <div id="add-money-form"  class="hero bg-base-100 ">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="assets/noakhali.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="flex mb-2" >
+                    <img src="assets/coin.png" alt="">
+                    <div  id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+                </div>
+                <h1 class="text-xl font-bold">Donate for Flood at Naokhali, Bangladesh</h1>
+                <p class="py-3">
+                    "Floods have devastated lives in Noakhali, Bangladesh, leaving many in urgent need of help.
+                    Your contribution can provide food, clean water, and shelter to those affected.
+                    Every donation counts and can make a real impact on the ground."
+                </p>
+                <input type="text" id="input-add-money" placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
+                  <button  onclick="my_modal_1.showModal()"
+                   class="btn btn-block mt-3 " id="btn-add-money">Donate Now</button>
+                  <!-- modal-section-start -->
+                  <dialog id="my_modal_1" class="modal ">
+                    <div class="modal-box flex  flex-col justify-center px-5 py-10 items-center ">
+                      <h3 class="text-5xl font-bold ">Congrates !</h3> <br>
+                      <img src="assets/coin.png"  alt="">
+                      <p class="py-4 ">You have Donated for Humankind</p>
+                      <h3 class=" text-gray-500 font-bold text-4xl">Successfully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn ">Close Confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              <!-- modal-section-end -->
+              </div>
+            </div>
+          </div>
+          <!-- section-1 End -->
+
+         <!-- section-2 -->
+         <div id="add-money-form" class="hero bg-base-100 ">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="assets/feni.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="flex mb-2">
+                    <img src="assets/coin.png" alt="">
+                    <div id="account-balance" class="stat-value text-2xl bg-white">5500BDT</div>
+                </div>
+                <h1 class="text-xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
+                <p class="py-3">
+                    "Feni, Bangladesh, is facing devastating floods, and urgent help is needed.
+                    Your donation can provide essential relief like food, clean water, and shelter.
+                    Together, we can offer hope to families affected by this disaster.
+                    Every contribution, big or small, makes a difference.
+                    Donate now and help the people of Feni rebuild their lives."
+                </p>
+                <input type="text" id="input-add-money"   placeholder="Write Donate Amount"autocomplete="off" class="input input-bordered w-full" />
+                  <button class="btn btn-block mt-3" id="btn-add-money">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- section-2 end -->
+
+          <!-- section-3 start -->
+          <div id="add-money-form"  class="hero bg-base-100 ">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="assets/quota-protest.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="flex mb-2">
+                    <img src="assets/coin.png" alt="">
+                    <div  id="account-balance"  class="stat-value text-2xl bg-white">5500BDT</div>
+                </div>
+                <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                <p class="py-3">
+                    "Support those injured in the Quota Movement as they fight for justice.
+                    Your aid can provide medical care and financial relief to those in need.
+                    These brave individuals stood for equality—now it's time to stand with them.
+                    Every donation helps in healing and rebuilding their lives.
+                    Join us in offering hope and support to the injured heroes of the Quota Movement."
+                </p>
+                <input type="text" id="input-add-money"   placeholder="Write Donate Amount" autocomplete="off" class="input input-bordered w-full " />
+                  <button class="btn btn-block mt-3" id=
+                  "btn-add-money">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- section-3 end -->
+
+          <!-- transaction start -->
+          <div id="transaction-section" class="hidden">
+            <h2 class="text-3xl text-center">Transaction History</h2>
+            <div id="transaction-container" class="space-y-3"></div>
+           </div>
+            <!-- transaction End -->
+
+    </main>
+
+    <!-- footer section -->
+     <footer></footer>
+
+     <script src="js/utilities.js"></script>
+     <script src="js/addmoney.js"></script>
+     <script src="js/fretures.js"></script>
+</body>
+</html>
