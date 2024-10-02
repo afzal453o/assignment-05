@@ -1,8 +1,6 @@
-
 function getInputFieldValueById(id){
     const inputValue=document.getElementById(id).value ;
     const inputNumber=parseFloat(inputValue);
-
     return inputNumber;
 }
 
@@ -12,13 +10,9 @@ function getTextFieldValueById(id){
     return textNumber;
 }
 
-function showSectionById(id){
-    // hide all the section
-    document.getElementById('add-money-form').classList.add('hidden');
-    document.getElementById('add-money-feni').classList.add('hidden');
-    document.getElementById('add-money-quota').classList.add('hidden');
-    document.getElementById('transaction-section').classList.add('hidden');
-    // show the section with the provide id as parameter
+function btnShow(id){
     document.getElementById(id).classList.remove('hidden');
-
+}
+function btnHide(id){
+    document.getElementById(id).classList.add('hidden');
 }

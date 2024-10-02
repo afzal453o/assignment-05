@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="./index.html">
+    <!-- Font-Awesome-Icon -->
+    <script src="https://kit.fontawesome.com/650b679ad2.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font-style -->
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .col-arrow {
+            color: white;
+        }
+    </style>
+    <!-- tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        string: ' rgb(119, 170, 234)',
+                        btnPrimary: '#b4f461'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 backdrop-blur-2xl opacity mb-16">
+        <div class="navbar bg-[#f9f7f3]  backdrop-blur-2xl opacity">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                </div>
+                <a class="btn btn-ghost text-xl bg-btnPrimary" onclick="location.href='./index.html'">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 text-xl ">
+                    <img src="assets/logo.png" alt="">
+                    <li><a>Donate Bangladesh</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                <div id="account-balance" class="stat-value text-2xl bg-white">5500</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="lg:px-32 space-y-5">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

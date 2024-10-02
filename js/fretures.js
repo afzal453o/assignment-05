@@ -1,22 +1,12 @@
-
-document.getElementById('show-add-money-form')
-.addEventListener('click',function(event){
-    event.preventDefault();
-    console.log('show add money button clicked');
-    showSectionById('add-money-form');
-})
-
-document.getElementById('show-add-money-form')
-.addEventListener('click',function(){
-    showSectionById('add-money-feni');
-})
-
-document.getElementById('show-add-money-form')
-.addEventListener('click',function(){
-    showSectionById('add-money-quota');
-})
-
-document.getElementById('show-transaction-history')
-.addEventListener('click',function(){
-    showSectionById('transaction-section');
-})
+document.getElementById('donate-button').addEventListener('click', function(){
+    btnHide('transaction-section');
+    btnShow('donate-section');
+    document.getElementById('donate-button').style.backgroundColor = '#b4f461';
+    document.getElementById('history-button').style.backgroundColor = 'white';
+});
+document.getElementById('history-button').addEventListener('click', function(){
+    btnShow('transaction-section');
+    btnHide('donate-section');
+    document.getElementById('donate-button').style.backgroundColor = 'white';
+    document.getElementById('history-button').style.backgroundColor = '#b4f461';
+});

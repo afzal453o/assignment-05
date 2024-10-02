@@ -1,4 +1,4 @@
-
+const newDate = new Date();
 // Donation or add money
 document.getElementById('btn-add-noakhali')
 .addEventListener('click',function(event){
@@ -12,10 +12,6 @@ document.getElementById('btn-add-noakhali')
         alert('Failed to add money');
         return;
     }
-
-
-
-
      const balance=getTextFieldValueById('account-balance');
     const newBalance=balance - addMoney;
      const newNoakhaliBalance = addMoney + noakhaliBalance;
@@ -30,9 +26,7 @@ document.getElementById('btn-add-noakhali')
 
     // add to transaction history
     const p =document.createElement('p');
-    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance}`;
-    console.log(p);
-
+    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance} Date: ${newDate}`;
     // should be a common function
     document.getElementById('transaction-container').appendChild(p);
 
@@ -66,8 +60,7 @@ document.getElementById('btn-add-feni')
 
     // add to transaction history
     const p =document.createElement('p');
-    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance}`;
-    console.log(p);
+    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance} Date: ${newDate}`;
 
     // should be a common function
     document.getElementById('transaction-container').appendChild(p);
@@ -102,8 +95,7 @@ document.getElementById('btn-add-quota')
 
     // add to transaction history
     const p =document.createElement('p');
-    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance}`;
-    console.log(p);
+    p.innerText=`Added:${addMoney} Tk. New Balance:${newBalance} Date: ${newDate}`;
 
     // should be a common function
     document.getElementById('transaction-container').appendChild(p);
